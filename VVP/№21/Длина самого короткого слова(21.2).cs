@@ -9,8 +9,7 @@ namespace Длина_самого_короткого_слова_21._2_
             WriteLine("Введите строку состоящюу из русских слов, разделенных пробелами:");
             s = ReadLine();
             string[] s1 = s.Split(" ");
-            int min = s1[0].Length;
-            int i;
+            int min = s1[0].Length,i;
             for (i = 0; i < s1.Length; i++)
             {
                 if (min > s1[i].Length)
@@ -18,7 +17,7 @@ namespace Длина_самого_короткого_слова_21._2_
                     min = s1[i].Length;
                 }
             }
-            Write($"Длина самого кароткого слова:{min}");
+            Write($"Длина самого короткого слова:{min}");
         }
     }
 }
